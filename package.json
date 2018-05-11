@@ -1,5 +1,5 @@
 {
-  "name": "crm-api-npm",
+  "name": "flip-fca",
   "version": "0.0.1",
   "description": "An easy to use package that allows any application to interact with Flip CRM",
   "main": "index.js",

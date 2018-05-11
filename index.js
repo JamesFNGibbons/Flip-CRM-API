@@ -8,6 +8,13 @@
 const http = require('http');
 
 /**
+  * This is where the options will be
+  * stored after the inital authentication.
+  * mainly for ease of use.
+*/
+let global_options;
+
+/**
   * Function used to handle an options
   * paramater being given.
   * @return request options in JSON array.
@@ -45,8 +52,16 @@ function get_options(options){
     the_options.query_string = `http://${the_options.host}:${the_options.port}/api/`;
   }
   
+  // Mirror the options to the global options.
+  global_options = the_options;
+  
   return the_options;
 }
+
+/**
+  * Function used to validate that a token
+  * is valid. This will return a promise, and 
+  * will only be used to validate 
 
 /**
   * Function used to convert a public_key
@@ -106,6 +121,8 @@ exports.authenticate = (options) => {
 */
 exports.create_client = (token, client) => {
   return new Promise((resolve, reject) => {
-    
+    if(token && client){
+      
+    }
   })
 }
