@@ -1,0 +1,14 @@
+{
+  "name": "crm-api-npm",
+  "version": "0.0.1",
+  "description": "An easy to use package that allows any application to interact with Flip CRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Gibbons <jgibbons@flipweb.co.uk>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "md5": "^2.2.1"
+  }
+}
